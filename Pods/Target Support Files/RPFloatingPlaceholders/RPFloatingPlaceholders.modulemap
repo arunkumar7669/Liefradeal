@@ -1,0 +1,6 @@
+framework module RPFloatingPlaceholders {
+  umbrella header "RPFloatingPlaceholders-umbrella.h"
+
+  export *
+  module * { export * }
+}

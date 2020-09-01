@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuDetailsViewController" customModule="Saravanaa___Bhavan" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonCart" destination="rbl-Aq-ZeT" id="q8b-uJ-PZQ"/>
+                <outlet property="labelDescription" destination="x0Q-0u-IBw" id="Ord-uc-OIS"/>
+                <outlet property="labelMenuName" destination="yTS-b0-lSM" id="Qj7-1t-P2k"/>
+                <outlet property="labelTotal" destination="RwB-p3-1bo" id="6rm-Fg-slK"/>
+                <outlet property="labelTotalAmount" destination="rgC-fT-0jf" id="7Hg-25-JGt"/>
+                <outlet property="tableView" destination="p1f-uC-rJv" id="IoS-Iu-IsI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbl-Aq-ZeT">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <color key="backgroundColor" red="0.0078431372550000003" green="0.74901960779999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Kp5-hT-LcB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <state key="normal" title="Add to Cart">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAddToCartAction:" destination="-1" eventType="touchUpInside" id="woB-R4-RNH"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwB-p3-1bo">
+                    <rect key="frame" x="14" y="586" width="39.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.89019607840000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgC-fT-0jf">
+                    <rect key="frame" x="330" y="586" width="30" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.89019607840000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lamb Doner Kebab" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTS-b0-lSM">
+                    <rect key="frame" x="15" y="15" width="345" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="served with salad, pitta and sauce" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0Q-0u-IBw">
+                    <rect key="frame" x="15" y="40.5" width="345" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p1f-uC-rJv">
+                    <rect key="frame" x="0.0" y="58.5" width="375" height="517.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="p1f-uC-rJv" firstAttribute="top" secondItem="x0Q-0u-IBw" secondAttribute="bottom" id="0XO-22-7ri"/>
+                <constraint firstItem="x0Q-0u-IBw" firstAttribute="leading" secondItem="yTS-b0-lSM" secondAttribute="leading" id="3ey-fD-XNy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yTS-b0-lSM" secondAttribute="trailing" constant="15" id="CfL-Vw-eih"/>
+                <constraint firstItem="yTS-b0-lSM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="JhC-fI-qwH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rgC-fT-0jf" secondAttribute="trailing" constant="15" id="KIK-Ac-xMF"/>
+                <constraint firstItem="x0Q-0u-IBw" firstAttribute="trailing" secondItem="yTS-b0-lSM" secondAttribute="trailing" id="V36-J9-nVG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rbl-Aq-ZeT" secondAttribute="bottom" id="XYz-IE-5hH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p1f-uC-rJv" secondAttribute="trailing" id="YHM-RR-xMf"/>
+                <constraint firstItem="RwB-p3-1bo" firstAttribute="top" secondItem="p1f-uC-rJv" secondAttribute="bottom" constant="10" id="ZxT-vw-Y5p"/>
+                <constraint firstItem="RwB-p3-1bo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="aSN-SP-NAb"/>
+                <constraint firstItem="p1f-uC-rJv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ctE-V0-bX5"/>
+                <constraint firstItem="yTS-b0-lSM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="ddR-oh-lTp"/>
+                <constraint firstItem="rbl-Aq-ZeT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ef4-Ew-X4p"/>
+                <constraint firstItem="rbl-Aq-ZeT" firstAttribute="top" secondItem="RwB-p3-1bo" secondAttribute="bottom" constant="15" id="jix-ht-TJu"/>
+                <constraint firstItem="rbl-Aq-ZeT" firstAttribute="top" secondItem="rgC-fT-0jf" secondAttribute="bottom" constant="15" id="veK-r2-O1a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rbl-Aq-ZeT" secondAttribute="trailing" id="xjI-jb-L8h"/>
+                <constraint firstItem="x0Q-0u-IBw" firstAttribute="top" secondItem="yTS-b0-lSM" secondAttribute="bottom" constant="5" id="yak-Ja-mYE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="142" y="154"/>
+        </view>
+    </objects>
+</document>

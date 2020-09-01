@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeliveryViewController" customModule="HarpersKabab" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonGotoMenu" destination="fj6-X5-Ce7" id="PfF-pW-FjV"/>
+                <outlet property="labelAreaName" destination="SM8-4y-27l" id="WTa-3J-nAV"/>
+                <outlet property="labelDeliveryCharge" destination="N2h-vg-mGc" id="Ewd-Sq-Bxn"/>
+                <outlet property="labelMinAmount" destination="FWZ-Ik-7gs" id="lW9-1M-c35"/>
+                <outlet property="labelNoDeliveryArea" destination="pW1-Zt-Bo0" id="ZWT-c4-c1c"/>
+                <outlet property="labelPostalCode" destination="fV9-7e-WfI" id="VJ8-hS-oIC"/>
+                <outlet property="tableView" destination="pg7-jh-qvH" id="o8o-0S-I27"/>
+                <outlet property="view" destination="1cu-Jk-FYC" id="dzx-BZ-idC"/>
+                <outlet property="viewContent" destination="Chs-O6-PoY" id="iPD-o0-BoW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1cu-Jk-FYC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chs-O6-PoY">
+                    <rect key="frame" x="15" y="35" width="345" height="576"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pg7-jh-qvH">
+                            <rect key="frame" x="0.0" y="51.5" width="345" height="524.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENE-B8-9Bz">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="46.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-vg-mGc">
+                                    <rect key="frame" x="275" y="10" width="60" height="31.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="nHT-Vh-bsm"/>
+                                    </constraints>
+                                    <string key="text">Delivery
+charge</string>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <color key="textColor" red="0.0078431372550000003" green="0.74901960779999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="FWZ-Ik-7gs">
+                                    <rect key="frame" x="190" y="10" width="80" height="31.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="7oy-Q6-qbs"/>
+                                    </constraints>
+                                    <string key="text">Min. amount
+for delivery</string>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <color key="textColor" red="0.0078431372550000003" green="0.74901960779999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="SM8-4y-27l">
+                                    <rect key="frame" x="10" y="18" width="110" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <color key="textColor" red="0.0078431372550000003" green="0.74901960779999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fV9-7e-WfI">
+                                    <rect key="frame" x="125" y="10" width="60" height="31.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="sEX-GB-zoX"/>
+                                    </constraints>
+                                    <string key="text">Postal
+Codes</string>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <color key="textColor" red="0.0078431372550000003" green="0.74901960779999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="FWZ-Ik-7gs" firstAttribute="centerY" secondItem="SM8-4y-27l" secondAttribute="centerY" id="44W-Mb-6Yc"/>
+                                <constraint firstItem="FWZ-Ik-7gs" firstAttribute="leading" secondItem="fV9-7e-WfI" secondAttribute="trailing" constant="5" id="DIY-Wa-5rg"/>
+                                <constraint firstItem="fV9-7e-WfI" firstAttribute="centerY" secondItem="SM8-4y-27l" secondAttribute="centerY" id="I8c-2k-vtq"/>
+                                <constraint firstItem="N2h-vg-mGc" firstAttribute="leading" secondItem="FWZ-Ik-7gs" secondAttribute="trailing" constant="5" id="RcD-Am-u4K"/>
+                                <constraint firstItem="N2h-vg-mGc" firstAttribute="top" secondItem="ENE-B8-9Bz" secondAttribute="top" constant="10" id="Wh3-il-G3v"/>
+                                <constraint firstItem="fV9-7e-WfI" firstAttribute="leading" secondItem="SM8-4y-27l" secondAttribute="trailing" constant="5" id="cmN-jp-7xt"/>
+                                <constraint firstItem="N2h-vg-mGc" firstAttribute="centerY" secondItem="SM8-4y-27l" secondAttribute="centerY" id="fI2-Ih-WRZ"/>
+                                <constraint firstAttribute="trailing" secondItem="N2h-vg-mGc" secondAttribute="trailing" constant="10" id="fwo-Dv-c6W"/>
+                                <constraint firstItem="SM8-4y-27l" firstAttribute="leading" secondItem="ENE-B8-9Bz" secondAttribute="leading" constant="10" id="iPJ-uP-xdD"/>
+                                <constraint firstAttribute="bottom" secondItem="N2h-vg-mGc" secondAttribute="bottom" constant="5" id="sqY-uu-1lQ"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Delivery area available." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-Zt-Bo0">
+                            <rect key="frame" x="10" y="277.5" width="325" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ENE-B8-9Bz" firstAttribute="top" secondItem="Chs-O6-PoY" secondAttribute="top" id="0ez-Eq-X1z"/>
+                        <constraint firstItem="pW1-Zt-Bo0" firstAttribute="centerY" secondItem="Chs-O6-PoY" secondAttribute="centerY" id="1uG-4t-XqR"/>
+                        <constraint firstItem="pW1-Zt-Bo0" firstAttribute="leading" secondItem="Chs-O6-PoY" secondAttribute="leading" constant="10" id="6Lc-Ck-EIJ"/>
+                        <constraint firstAttribute="trailing" secondItem="pW1-Zt-Bo0" secondAttribute="trailing" constant="10" id="SfC-gx-hAa"/>
+                        <constraint firstAttribute="trailing" secondItem="pg7-jh-qvH" secondAttribute="trailing" id="TiE-xi-C2b"/>
+                        <constraint firstAttribute="trailing" secondItem="ENE-B8-9Bz" secondAttribute="trailing" id="fCc-kc-vC2"/>
+                        <constraint firstAttribute="bottom" secondItem="pg7-jh-qvH" secondAttribute="bottom" id="hX6-E9-L5L"/>
+                        <constraint firstItem="pg7-jh-qvH" firstAttribute="leading" secondItem="Chs-O6-PoY" secondAttribute="leading" id="mdV-Mp-Khx"/>
+                        <constraint firstItem="ENE-B8-9Bz" firstAttribute="leading" secondItem="Chs-O6-PoY" secondAttribute="leading" id="uYh-Ak-yRe"/>
+                        <constraint firstItem="pg7-jh-qvH" firstAttribute="top" secondItem="ENE-B8-9Bz" secondAttribute="bottom" constant="5" id="x8N-tg-8I8"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj6-X5-Ce7">
+                    <rect key="frame" x="1" y="621" width="373" height="45"/>
+                    <color key="backgroundColor" red="0.0078431372550000003" green="0.74901960779999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="gRx-sx-Lgm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <state key="normal" title="Go to Menu">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fj6-X5-Ce7" firstAttribute="top" secondItem="Chs-O6-PoY" secondAttribute="bottom" constant="10" id="0DB-qQ-9ik"/>
+                <constraint firstItem="Chs-O6-PoY" firstAttribute="leading" secondItem="jRn-sS-Td6" secondAttribute="leading" constant="15" id="Hxb-Km-dcz"/>
+                <constraint firstItem="jRn-sS-Td6" firstAttribute="trailing" secondItem="Chs-O6-PoY" secondAttribute="trailing" constant="15" id="QEA-J9-FZR"/>
+                <constraint firstItem="fj6-X5-Ce7" firstAttribute="leading" secondItem="1cu-Jk-FYC" secondAttribute="leading" constant="1" id="Qzm-17-nrx"/>
+                <constraint firstItem="Chs-O6-PoY" firstAttribute="top" secondItem="jRn-sS-Td6" secondAttribute="top" constant="15" id="gFl-3o-9E2"/>
+                <constraint firstItem="jRn-sS-Td6" firstAttribute="bottom" secondItem="fj6-X5-Ce7" secondAttribute="bottom" constant="1" id="hMl-sr-itH"/>
+                <constraint firstItem="jRn-sS-Td6" firstAttribute="trailing" secondItem="fj6-X5-Ce7" secondAttribute="trailing" constant="1" id="ykf-iw-IKQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="jRn-sS-Td6"/>
+        </view>
+    </objects>
+</document>

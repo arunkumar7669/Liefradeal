@@ -1,0 +1,82 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CardIO (5.4.1)
+  - CNPPopupController (0.3.3)
+  - Cosmos (22.1.0)
+  - GoogleMaps (3.9.0):
+    - GoogleMaps/Maps (= 3.9.0)
+  - GoogleMaps/Base (3.9.0)
+  - GoogleMaps/Maps (3.9.0):
+    - GoogleMaps/Base
+  - MBProgressHUD (1.2.0)
+  - PayPal-iOS-SDK (2.18.1):
+    - PayPal-iOS-SDK/CardIO (= 2.18.1)
+    - PayPal-iOS-SDK/Core (= 2.18.1)
+  - PayPal-iOS-SDK/CardIO (2.18.1):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.18.1)
+  - QuickLayout (2.1.1)
+  - RPFloatingPlaceholders (0.3.3)
+  - SDWebImage (5.8.3):
+    - SDWebImage/Core (= 5.8.3)
+  - SDWebImage/Core (5.8.3)
+  - Stripe (19.3.0)
+  - SwiftEntryKit (0.8.1):
+    - QuickLayout (= 2.1.1)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.1)
+  - TPKeyboardAvoidingSwift (3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - CNPPopupController
+  - Cosmos
+  - GoogleMaps
+  - MBProgressHUD
+  - PayPal-iOS-SDK
+  - RPFloatingPlaceholders
+  - SDWebImage
+  - Stripe
+  - SwiftEntryKit (= 0.8.1)
+  - SwiftyJSON
+  - Toast-Swift
+  - TPKeyboardAvoidingSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CardIO
+    - CNPPopupController
+    - Cosmos
+    - GoogleMaps
+    - MBProgressHUD
+    - PayPal-iOS-SDK
+    - QuickLayout
+    - RPFloatingPlaceholders
+    - SDWebImage
+    - Stripe
+    - SwiftEntryKit
+    - SwiftyJSON
+    - Toast-Swift
+    - TPKeyboardAvoidingSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  CNPPopupController: 59b06290762f68beab5fb0bbfa87eb4dcbefb7de
+  Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+  GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  PayPal-iOS-SDK: 70d56697aef502c130b9840e31dea5c6b8a350e1
+  QuickLayout: 9af2b7fd89a6552828f51a5aba28d1bcdb8b340c
+  RPFloatingPlaceholders: 983ea3e4b8d7aee04ce2d3d418a8fa24c3f59061
+  SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
+  Stripe: dd5bfdd5f1daed4f9ddbfb47e9449ec302f9f708
+  SwiftEntryKit: 132e35ac87d50d19b5f3580f8d8fa07fd1d63417
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  TPKeyboardAvoidingSwift: ce1a75e0bc3af6b485f8bfa1d0a8320cfc565851
+
+PODFILE CHECKSUM: d1f7a8b41b344079b16371ad151f950ddc3a6241
+
+COCOAPODS: 1.9.3
